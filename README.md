@@ -1,5 +1,7 @@
 # India Elections 2024 map project
 
+![screenshot](screenshot.png)
+
 Showing voting dates on parliamentary constituency maps
 
 - colors as per full-India PC map shown on https://elections24.eci.gov.in/
