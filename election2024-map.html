@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_736074c5a5a7ad171dbb18101f16190a {
+                #map_fd3f9a776b520a65dcde2f43bdff5503 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -67,19 +67,31 @@
 <h5>India General Elections 2024</h5>
 <h4>Voting Dates</h4>
 <p>See <a href="https://elections24.eci.gov.in/">elections24.eci.gov.in</a> for official Elections related info</p>
-<small>Disclaimer: This is a volunteer effort, no affiliations. Data is sourced from 
-<a href="https://webgis1.nic.in/publishing/rest/services/election/election/MapServer/2" target="_blank">NIC Mapserver: Election/Phases</a>
- See <a href="https://groups.google.com/g/datameet/c/vcuMiTiK5XQ" target="_blank">datameet group discussion</a>
 </div>
     
-            <div class="folium-map" id="map_736074c5a5a7ad171dbb18101f16190a" ></div>
+<div style="position: fixed; 
+     bottom: 20px; right: 20px; width: 300px; height: auto; 
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     z-index:9999;
+     padding: 10px;
+     background: white;
+">
+<small>Disclaimer: This is a volunteer effort, no affiliations. Data is sourced from 
+<a href="https://webgis1.nic.in/publishing/rest/services/election/election/MapServer/2" target="_blank">NIC Mapserver: Election/Phases</a>
+| See <a href="https://groups.google.com/g/datameet/c/vcuMiTiK5XQ" target="_blank">datameet group discussion</a> 
+| <a href="https://github.com/answerquest/india-elections2024-map" target="_blank">Source code</a> 
+| Made with &#10084; in India
+</small>
+</div>
+    
+            <div class="folium-map" id="map_fd3f9a776b520a65dcde2f43bdff5503" ></div>
         
 </body>
 <script>
     
     
-            var map_736074c5a5a7ad171dbb18101f16190a = L.map(
-                "map_736074c5a5a7ad171dbb18101f16190a",
+            var map_fd3f9a776b520a65dcde2f43bdff5503 = L.map(
+                "map_fd3f9a776b520a65dcde2f43bdff5503",
                 {
                     center: [22.0, 85.0],
                     crs: L.CRS.EPSG3857,
@@ -93,13 +105,13 @@
 
         
     
-            var tile_layer_b861cce15be34979e0f41edc07356e5c = L.tileLayer(
+            var tile_layer_5a69e773fcaa88d0a50c68eb077359c9 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_b861cce15be34979e0f41edc07356e5c.addTo(map_736074c5a5a7ad171dbb18101f16190a);
+            tile_layer_5a69e773fcaa88d0a50c68eb077359c9.addTo(map_fd3f9a776b520a65dcde2f43bdff5503);
         
     
         function geo_json_c6e837718c47bc87da8083f4e3a242e8_styler(feature) {
@@ -184,13 +196,13 @@
     ,{"className": "foliumtooltip", "maxWidth": 800, "sticky": true});
                      
     
-            geo_json_c6e837718c47bc87da8083f4e3a242e8.addTo(map_736074c5a5a7ad171dbb18101f16190a);
+            geo_json_c6e837718c47bc87da8083f4e3a242e8.addTo(map_fd3f9a776b520a65dcde2f43bdff5503);
         
     
-            tile_layer_b861cce15be34979e0f41edc07356e5c.addTo(map_736074c5a5a7ad171dbb18101f16190a);
+            tile_layer_5a69e773fcaa88d0a50c68eb077359c9.addTo(map_fd3f9a776b520a65dcde2f43bdff5503);
         
     
-            geo_json_c6e837718c47bc87da8083f4e3a242e8.addTo(map_736074c5a5a7ad171dbb18101f16190a);
+            geo_json_c6e837718c47bc87da8083f4e3a242e8.addTo(map_fd3f9a776b520a65dcde2f43bdff5503);
         
 </script>
 </html>
